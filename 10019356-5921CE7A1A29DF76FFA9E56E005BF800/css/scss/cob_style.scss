@@ -1,30 +1,40 @@
 /******** Global Elements - Application Font *************/
 *{
-  font-family: $baseFontFamily;
+    font-family: $baseFontFamily;
+	line-height:$baseFontLineHeight;
+    font-size:$baseFontSize;
+    line-height:20px;
 }
 
+/* Custom fonts goes here */
+
+@font-face { font-family: "Klara"; src: url("/brands/10019356-5921CE7A1A29DF76FFA9E56E005BF800/fonts/Karla-Regular.woff"); }
+@font-face { font-family: "MSGloriolaIIDisplayThin"; src: url("/brands/10019356-5921CE7A1A29DF76FFA9E56E005BF800/fonts/MS-Gloriola-II-Display-Thin.ttf"); }
+@font-face { font-family: "MSGloriolaIIStdLight"; src: url("/brands/10019356-5921CE7A1A29DF76FFA9E56E005BF800/fonts/MS-Gloriola-II-Std-Light.ttf"); }
+
 body{
-  font-size:$baseFontSize !important;
-  color: $baseTextColor;
-  .helpText{
     font-size:$baseFontSize !important;
-    color: $baseTextColor;  
-  }
-  .label{
-    color: $baseTextColor !important;
-  }
-  #otherAccountsContainer .otherAccountsLink{
-    color: $baseTextColor !important;
-  }
-  .siteList .site-item .siteInfo .siteLoginForm .siteName{
+    font-family: $baseFontFamily;
     color: $baseTextColor;
-  }
-  .panel {  
-    color: $baseTextColor;
-  }
-  #bubbleTooltip{
-    color: $baseTextColor;
-  }
+    .helpText{
+        font-size:$baseFontSize !important;
+        color: $baseTextColor;  
+    }
+    .label{
+        color: $baseTextColor !important;
+    }
+    #otherAccountsContainer .otherAccountsLink{
+        color: $baseTextColor !important;
+    }
+    .siteList .site-item .siteInfo .siteLoginForm .siteName{
+        color: $baseTextColor;
+    }
+    .panel {    
+        color: $baseTextColor;
+    }
+    #bubbleTooltip{
+        color: $baseTextColor;
+    }
 }
 .module_10003600 .flContainer {
     ul.tabs .listElement label {
@@ -33,8 +43,11 @@ body{
     .headerTitle{
         font-family: $baseFontFamily;
     }
+    .header .header-text{
+        font-size: $baseFontSize;
+    }
     .section-title {
-        font-family: $baseFontFamily;
+        font-family: $h2FontFamily !important;
     }
     .footer .link a {
         font-family: $baseFontFamily;
@@ -44,73 +57,102 @@ body{
         color: $baseTextColor;
     }
     .siteLogo .bankNameContainer #siteLogoDisplayName {
-        font-family: $baseFontFamily;
-        color: $baseTextColor;
-    }
-    .user-message {
-       color: $baseTextColor; 
-    }
-    .rightSection .rightSectionContent p, .rightSection .rightSectionContent li, .rightSection .rightSectionContent div {
+        font-family: $baseFontFamily !important; 
         color: $baseTextColor !important; 
     }
+    .user-message, .section-info {
+       color: $baseTextColor;
+       font-size:$baseFontSize; 
+    }
+    .rightSection .rightSectionContent p, .rightSection .rightSectionContent li, .rightSection .rightSectionContent div  {
+        color: $baseTextColor !important; 
+        font-size:$baseFontSize !important;
+    }
+    .rightSection .rightSectionContent #tips-content .heading {
+        color: $formContainerSectionTitleColor !important;
+    }
 }
-.module_10003592 .loginhelptext {
-    color: $baseTextColor !important; 
+.module_10003600 .flContainer .siteStatusMessage{
+    font-family: $baseFontFamily !important; 
+    color: $baseTextColor !important;
+    font-size:$baseFontSize !important;
+} 
+.module_10003592 .loginhelptext, .module_10003620 .helpText {
+    color: $baseTextColor !important;
+    font-size:$baseFontSize; 
 }
 .module_10003591 {
     .searchBoxContainer #searchBtn .button {
-        font-family: $baseFontFamily;
+        font-family: $baseFontFamily !important;
     }
     .siteList .site-item .siteInfo .siteName {
-        font-family: $baseFontFamily;
-        color: $baseTextColor;
+        font-family: $baseFontFamily !important;
+        color: $siteListColor;
+        font-size:$baseFontSize;
+		line-height: $baseFontLineHeight;
     }
     #otherAccountsContainer .otherAccountsLink {
         font-family: $baseFontFamily;
+        font-size: $baseFontSize;
     }
     
 }
-.section-wrapper .section-header, .errorSection .error-title, .module_10003598 .success-page-main-title .success-page-currency {
+.module_10003600 .section-wrapper .section-header, .errorSection .error-title, .module_10003598 .success-page-main-title .success-page-currency {
     font-family: $baseFontFamily;
 }
-.module_10003594 .list-item .title {
-    font-family: $baseFontFamily;
-    color: $baseTextColor; 
+.module_10003594 .list-item .title, .module_10003594 .list-item, .module_10003623 .list-item .accountName, .module_10003623 .list-item .accountType, .module_10003623 .list-item {
+    font-family: $baseFontFamily !important;
+    color: $baseTextColor !important;
+    font-size: $baseFontSize !important;
+	line-height: $baseFontLineHeight !important;
 }
 // Links
-.siteUrl a, #otherAccountsContainer .otherAccountsLink a, a.navigate-to-provider, .link a, .helpText a, .module_10003600 .rightSectionContent a, .module_10003591 .siteList .site-item .siteInfo .siteUrl{
-  color:$defaultLinkColor !important;
-  text-decoration:$defaultLinkDecoration;
-  
-  &:hover{
-    color:$linkColorHover !important;
-    text-decoration:$linkDecorationHover;
-  }
+.siteUrl a, #otherAccountsContainer .otherAccountsLink a, a.navigate-to-provider, .link a, .helpText a, .module_10003600 .rightSectionContent a, .module_10003591 .siteList .site-item .siteInfo .siteUrl, .module_10003620 .footer .link a, .siteUrl.ellipsis-cls span, .siteUrl a.popwin span, .module_10003592 .linkToSite a span,.module_10003620 .errorSection .error-description a, .externalCDVFooter-link{
+    color:$defaultLinkColor !important;
+    text-decoration:$defaultLinkDecoration;
+    font-size:$linkColorSize !important;
+    line-height:$linkLineHeight !important;
+    &:hover{
+        color:$linkColorHover !important;
+        text-decoration:$linkDecorationHover;
+    }
+}
+/****changing the size to 14px as Sagar suggested ***/
+.siteUrl.ellipsis-cls span{
+	font-size:$h3FontSize !important;
+	line-height:$h3LineHeight !important;
 }
 .searchBoxContainer{
-  .searchIcon{
-    color: $contentSecondaryColor !important;
-  }
-  .searchClose{
-    color: $contentSecondaryColor !important;
-  }
-  .backToPopSugg{
-    color: $contentSecondaryColor !important; 
-  }
+    .searchIcon{
+        color: $contentSecondaryColor !important;
+    }
+    .showClose .searchIcon{
+        color: $defaultLinkColor !important;
+    }
+    .searchClose{
+        color: $contentSecondaryColor !important;
+    }
+    .backToPopSugg{
+        color: $contentSecondaryColor !important;   
+    }
 }
 // css hack to apply placeholder text color in chrome
 ::-webkit-input-placeholder {
    color: $contentSecondaryColor;
 }
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder, .avFormField:-moz-placeholder, .formField:-moz-placeholder { /* Firefox 18- */
    color: $contentSecondaryColor;
 }
-::-moz-placeholder {  /* Firefox 19+ */
+::-moz-placeholder, .avFormField::-moz-placeholder, .formField::-moz-placeholder, #siteSearch::-moz-placeholder {  /* Firefox 19+ */
    color: $contentSecondaryColor;
 }
-:-ms-input-placeholder {
-   color: $contentSecondaryColor;
+:-ms-input-placeholder, .avFormField:-ms-input-placeholder, .formField:-ms-input-placeholder, #siteSearch:-ms-input-placeholder, .manualAccField:-ms-input-placeholder,.star_field:-ms-input-placeholder {
+   color: $contentSecondaryColor !important;
 }
+::-ms-input-placeholder, .avFormField::-ms-input-placeholder, .formField::-ms-input-placeholder, #siteSearch::-ms-input-placeholder,.manualAccField::-ms-input-placeholder,.star_field::-ms-input-placeholder  { /* Edge */
+    color: $contentSecondaryColor;
+}
+
 // Errors - Success
 /*.errorSection {
     background-color: $errorBgColor;
@@ -123,87 +165,181 @@ body{
     }
 }
 .accountStatus .accountsInError{
-  color: $errorMessageTitleColor !important;
+    color: $errorMessageTitleColor !important;
 }*/
 .module_10003600 form.with-form-fields .row .inlineError, .module_10003600 #deletePopUpId .yodlee-modal-popup-modal-content .popup-content.warning {
     color: $errorMessageDescColor !important;
+    font-size: $baseFontSize !important;
+}
+.module_10003600 #deletePopUpId .yodlee-modal-popup-modal-content .popup-content{
+    font-size: $h1FontSize !important;
+    line-height: $h1LineHeight;
+    font-family:$h1FontFamily;
+	text-align:center;
+}
+.module_10003600 #deletePopUpId .yodlee-modal-popup-modal-content .popup-content label {
+    font-size:$baseFontSize !important;
+    color:$baseTextColor;
 }
 .module_10003598 .success-page-main-title .success-page-currency {
     color: $successTextColor;
 }
+.module_10003600 #deletePopUpId .yodlee-modal-popup-modal-content .popup-content #deleteconfirmcheckLabel {
+    display: block !important;
+	text-align:left !important;
+}
+.module_10003600 #deletePopUpId .yodlee-modal-popup-modal-content .pop-up-account-name, .module_10003598 li.mortgage-account-item label {
+    font-family:$baseFontFamily;
+    font-size:$baseFontSize;
+    color:$baseTextColor;
+}
+.module_10003600 #deletePopUpId .yodlee-modal-popup-sub-title .pop-up-account-name{
+	font-size: $h1FontSize !important;
+    line-height: $h1LineHeight !important;
+    font-family:$h1FontFamily !important;
+	color:$popupHeaderTitleColor;
+}
+.module_10003598 .card-footer {
+    margin-top: 2.57143rem !important;
+}
 
 /********  Global Elements - Buttons  *************/
 .button {
-  border-radius: $buttonCornerRadius !important;
+    border-radius: $buttonCornerRadius !important;  
+    min-height: 60px !important;           
     &.expand {
-    border-radius: $buttonCornerRadius !important;
-  }
+        border-radius: $buttonCornerRadius !important;
+    }
     &.primary {
         color: $primaryButtonFontColor !important;
         background-color: $primaryButtonBgColor !important;
         border: 1px solid $primaryButtonBorderColor;
-    &:hover {
+        font-size:$baseFontSize !important;
+        text-transform:lowercase;
+        &:hover {
             color: $primaryButtonFontColorHover !important;
-      background-color: $primaryBtnBgColorHover !important;
-      border: 1px solid $primaryBtnBorderColorHover;
+            background-color: $primaryBtnBgColorHover !important;
+            border: 1px solid $primaryBtnBorderColorHover;
         }
-    &.disabled{
-      background-color: $primaryButtonBgColor !important;
-      border: 1px solid $primaryButtonBorderColor;
+        &.disabled{
+            background-color: $primaryButtonDisabledBgColor !important;
+            border: 1px solid $primaryButtonDisabledBgColor;
             opacity: $primaryDisableOpacity !important;
-            box-shadow: 1px 1px 3px $primaryButtonBorderColor;
+            box-shadow: none;
+        }
     }
-  }
-  &.secondary { 
-    background-color: $secondaryBtnBgColor !important;
-    border: 1px solid $secondaryBtnBorderColor;
-    box-shadow: 1px 1px 1px $secondaryBtnBorderColor;
-    color: $secondaryButtonFontColor !important;
+    &.secondary { 
+        background-color: $secondaryBtnBgColor !important;
+        border: 1px solid $secondaryBtnBorderColor;
+        box-shadow: none !important;
+        color: $secondaryButtonFontColor !important;
+        font-size:$baseFontSize !important;
+        text-transform:lowercase;
         &:hover {
-      background-color: $secondaryButtonBgColorHover !important;
-      border: 1px solid $secondaryBtnBorderColorHover !important;
-      box-shadow: 1px 1px 1px $secondaryBtnBorderColorHover;
-      color: $secondaryButtonFontColorHover !important;
+            background-color: $secondaryButtonBgColorHover !important;
+            border: 1px solid $secondaryBtnBorderColorHover !important;
+            box-shadow: none;
+            color: $secondaryButtonFontColorHover !important;
         } 
     }
-  &.tertiary {
-    background-color: $tertiaryButtonBgColor;
-    border: 1px solid $tertiaryButtonBorderColor;
-    color: $tertiaryButtonFontColor !important;
+    &.tertiary {
+        background-color: $tertiaryButtonBgColor;
+        border: 1px solid $tertiaryButtonBorderColor;
+        color: $tertiaryButtonFontColor !important;
+        font-size:$baseFontSize !important;
+        text-transform:lowercase;
         &:hover {
-      background-color: $tertiaryButttonBgColorHover;
-      border: 1px solid $tertiaryBtnBorderColorHover;
-      color: $tertiaryButtonFontColorHover;
+            background-color: $tertiaryButttonBgColorHover;
+            border: 1px solid $tertiaryBtnBorderColorHover;
+            color: $tertiaryButtonFontColorHover;
         } 
-  }
+    }
 } 
 //Model popup button styles are made as secondary button styles
-.yodlee-modal-popup-modal-content .yodlee-modal-popup-btn{
-    background-color: $secondaryBtnBgColor !important;
-    border: 1px solid $secondaryBtnBorderColor;
-    box-shadow: 1px 1px 1px $secondaryBtnBorderColor;
-    color: $secondaryButtonFontColor;
+.yodlee-modal-popup-modal-content { 
+    
+    .yodlee-modal-popup-btn.cancel {
+        background-color: $secondaryBtnBgColor !important;
+        border: 1px solid $secondaryBtnBorderColor;
+        box-shadow: none;
+        color: $secondaryButtonFontColor;       
+        border-radius: $buttonCornerRadius !important;  
+        min-height: 60px !important;
+        min-width:138px !important;
+        padding-top: 12px !important;
+        padding-top: 18px !important;
+        text-transform: lowercase;
+        font-size: $baseFontSize;
         &:hover {
-      background-color: $secondaryButtonBgColorHover !important;
-      border: 1px solid $secondaryBtnBorderColorHover !important;
-      box-shadow: 1px 1px 1px $secondaryBtnBorderColorHover;
-      color: $secondaryButtonFontColorHover !important;
+            background-color: $secondaryButtonBgColorHover !important;
+            border: 1px solid $secondaryBtnBorderColorHover !important;
+            box-shadow: none;
+            color: $secondaryButtonFontColorHover !important;
         }
+    }
+    .yodlee-modal-popup-btn.delete{
+        background-color: $primaryButtonBgColor !important;
+        border: 1px solid $primaryButtonBgColor;
+        box-shadow: none;
+        color: $primaryButtonFontColor;        
+        border-radius: $buttonCornerRadius !important;  
+        min-height: 60px !important;
+        min-width:138px !important;     
+        padding-top: 18px !important;
+        text-transform: lowercase;
+        font-size: $baseFontSize;
+        margin-left: 0px;
+        &:hover {
+            background-color: $primaryBtnBgColorHover !important;
+            border: 1px solid $primaryBtnBorderColorHover !important;
+            box-shadow: none;
+            color: $primaryButtonFontColorHover !important;
+        }
+    }
 }
+
 //Delete button
 .module_10003600 #deletePopUpId .yodlee-modal-popup-btn-group .yodlee-modal-popup-btn.tertiary {
     background-color: $deleteBtnBgColor !important;
     border: 1px solid $deleteBtnBorderColor !important;
-    box-shadow: 1px 1px 1px $deleteBtnBorderColor !important;
+    box-shadow: none !important;
     color: $deleteButtonFontColor !important;
+    font-size:$baseFontSize !important;
+    text-transform:lowercase;
+    padding-top: 12px !important;
     &:hover {
         background-color: $deleteBtnBgColorHover !important;
         border: 1px solid $deleteBtnBorderColorHover !important;
-        box-shadow: 1px 1px 1px $deleteBtnBorderColorHover !important;
+        box-shadow: none !important;
         color: $deleteBtnFontColorHover !important;
     } 
+	&.disabled{
+            background-color: $primaryButtonDisabledBgColor !important;
+            border: 1px solid $primaryButtonDisabledBgColor !important;
+            opacity: $primaryDisableOpacity !important;
+            box-shadow: none;
+        }
+}
+.module_10003600 #deletePopUpId .yodlee-modal-popup-btn-group .yodlee-modal-popup-btn.secondary {    
+    padding-top: 12px !important;
 }
 
+//Model popup button styles for IAV
+.module_10003620 .IAVWrapper .dialogPrimaryBtn, .module_10003620 .IAVWrapper .dialogPrimaryBtn:hover {
+    background-color: $primaryButtonBgColor !important;
+    border:none;
+    box-shadow: none;
+    color: $primaryButtonFontColor !important;
+}
+
+.module_10003620 {
+    .button.primary.disabled {
+        background-color: $primaryButtonDisabledBgColor !important;
+    }
+    .button.primary:hover {
+        background-color: $primaryBtnBgColorHover !important;
+    }
+}
 /********  Global Elements - Form Container  *************/
 .module_10003600 .flContainer {
     .boxWrapper {
@@ -211,8 +347,15 @@ body{
         border-radius: $formContainerBorderRadius;
     }
     .section-title {
-        color: $formContainerHeaderTitleColor;
-        background-color: $formContainerHeaderBGColor;
+        color: $formContainerSectionTitleColor;        
+        font-size:$formContainerSectionTitleSize;        
+        background-color: $formContainerBGColor;
+    }
+    .boxWrapper.rightBox {
+        background-color:$boxWrapperBGColor;
+    }
+    .rightSection .section-title {
+        display: none !important;
     }
 }
 .section-wrapper .section-header {
@@ -222,129 +365,206 @@ body{
     .not-full-view .section-title2 {
         border-color: $formContainerBorderColor;
     }
+    .not-full-view .boxWrapper .manualAccount .scrollbaleBoxContainer {
+        border:none !important;
+    }
 }
-.module_10003594 .section-title2 {
+.module_10003594 .section-title2,.module_10003594 .section-title2 span {
     color: $formContainerHeaderTitleColor;
     background: $formContainerSubHeaderBGColor !important;
+    font-size:$formContainerSectionTitleSize !important;
+    font-family:$h2FontFamily !important;
+}
+.module_10003594 .container-div {
+    font-size:$baseFontSize !important;
+    color:$formContainerHeaderTitleColor !important;
+    background-color: $primaryButtonFontColor;
 }
 .module_10003600 .flContainer .site-form, .module_10003593 .boxWrapper, .module_10003598 .boxWrapper {
     background: $formContainerBGColor;
 }
 
 /********  Global Elements - Form Elements  *************/
-body .label, label.yodlee-radio-button-label-radio {
+label.yodlee-radio-button-label-radio {
     color: $FormLabelFontColor !important;
 }
-input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"] {
+.module_10003598 .section-body .yodlee-radio-button-label-radio,.module_10003597 .customRadio label.yodlee-radio-button-label-radio{    
+    font-family: $h2FontFamily !important;
+    font-size: $h2FontSize;
+    margin-bottom: 2.28571rem;
+	line-height:25px;
+}
+.module_10003598 .section-body .yodlee-radio-button-label-radio{
+	margin-bottom: 25px;
+}
+.module_10003597 .customRadio label {
+	color: $baseTextColor;
+	font-size:$baseFontSize;
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"],textarea {
     background: $inputFieldDefaultBGColor;
     border-color: $inputFieldDefaultBorderColor;
     color: $inputFieldDefaultFontColor !important;
     border-radius: $inputFieldBorderRadius !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    font-size:$formContainerPlaceholderSize !important;
+    box-shadow:none !important;
+    font-family:$h2FontFamily !important;
+    line-height: 34px !important;
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus {
     background: $inputFieldFocusBGColor;
-    border-color: $inputFieldFocusBorderColor;
+    border-color: $inputFieldFocusBorderColor !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
     color: $inputFieldFocusFontColor;
 }
 .module_10003600 .input-error-field.errorField {
-    border-color: $inputFieldErrorBorderColor;
+    border-color: $inputFieldErrorBorderColor !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+	color:$errorColor !important;
+}
+.module_10003600 .row .inlineError {
+    color:$errorColor !important;
 }
 //dropdown
 .customSelect {
-  border-color: $dropdownBorderColor !important;
-  background-color: $dropdownBgColor !important;
+    border-color: $dropdownBorderColor !important;
+    background-color: $dropdownBgColor !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
 }
-.customSelect .value, .module_10003600 .customSelect .option {
-  color: $dropdownFontColor !important;
+ .customSelect .option {
+    color: $dropdownFontColor !important;
+    font-size:$formContainerSectionTitleSize;
+    font-family:$h2FontFamily !important;
+}
+.customSelect .value{
+    color:$defaultLinkColor !important;
+    font-size:$formContainerSectionTitleSize;
+    font-family:$h2FontFamily !important;
 }
 .customSelect .optList{
-  background: $dropdownBgColor;
+    background: $dropdownBgColor;
     border-color: $dropdownBorderColor;
 }
 .customSelect .selected {
-  background: $dropdownSelectedItemBgColor;
+    background: $dropdownSelectedItemBgColor !important;
+    color:$defaultLinkColor !important;
 }
 .customSelect .option:hover{
-  background: $dropdownItemBgColorOnHover;
+    background: $dropdownItemBgColorOnHover !important;
 }
 .f-dropdown li:hover, .f-dropdown li:focus{
-  background: $dropdownItemBgColorOnHover;
+    background: $dropdownItemBgColorOnHover;
+}
+.module_10003597 .customSelect > span {
+    border: 0.0714rem solid #c5c5c5;
+    border-radius: 0.214rem;
+    display: block;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
 }
 // Switch
 .switch label {
     background-color: $switchBtnOffBgColor !important;
-  border-color: $switchBtnOffBgColor !important;
+    border-color: $switchBtnOffBgColor !important;
    }
 .switch label::before ,.switch label::after{
     border-color: $switchBtnOffBgColor  !important;;
 }
 .switch input:checked + label::after{
-  border-color: $switchBtnOnBgColor !important;
+    border-color: $switchBtnOnBgColor !important;
 }
 .switch input:checked + label{
-  border-color: $switchBtnOnBgColor !important;
+    border-color: $switchBtnOnBgColor !important;
 }
 
 .switch input:checked + label::before{
-  border-color: $switchBtnOnBgColor  !important;
+    border-color: $switchBtnOnBgColor  !important;
 }
 
 /********  Global Elements - Calendar  *************/
 .calendar{
-  .days{
-    .months{
-      background-color: $calendarHeaderBgColor;
-      color: $calendarHeaderFontColor;
+    .days{
+        .months{
+            background-color: $calendarHeaderBgColor;
+            color: $calendarHeaderFontColor;
+        }
+        .js-table.month .weekdays{
+            background-color:$calendarDaysBgColor;
+            color: $calendarDaysFontColor;
+        }
+        .current-month-and-year {
+            font-family: $baseFontFamily;
+            font-size: 15px;
+        }
+        .js-table.month .weeks .js-row{
+            .past-date,.future-date{
+                background-color: $calendarActivedDatesBgColor;
+                a{
+                    color:$calendarActiveDateFontColor !important; 
+                }
+                &.selected{
+                    background-color:$calendarSelectedDateBgColor !important;
+                    a {
+                        color: $calendarSelectedDateFontColor !important;
+                    }
+                }
+                &.selected::before{
+                    background-color:$calendarSelectedDateBgColor !important;
+                    a {
+                        color: $calendarSelectedDateFontColor !important;
+                    }                   
+                }
+                &.holiday{
+                    background-color:$calendarHolidayBackgroundColor !important;
+                    a{
+                        color:$calendarHolidayFontColor !important; 
+                    }
+                }                   
+            }
+            .todays-date{
+                background-color:$calendarTodayDateBgColor;
+                a{
+                    color:$calendarTodayDateFontColor !important;
+                }
+            }               
+            .pre-filler-date.past-date,.post-filler-date.future-date{
+                a{
+                    color:$calendarInActiveDateFontColor !important; 
+                }
+                &.holiday{
+                    background-color:$calendarHolidayBackgroundColor !important;
+                }                   
+            }
+			.pre-filler-date.past-date.selected,.post-filler-date.future-date.selected {
+				a{
+					color:$calendarSelectedDateFontColor !important;
+				}
+			}	
+        }
     }
-    .js-table.month .weekdays{
-      background-color:$calendarDaysBgColor;
-      color: $calendarDaysFontColor;
-    }
-    .js-table.month .weeks .js-row{
-      .past-date,.future-date{
-        background-color: $calendarActivedDatesBgColor;
-        a{
-          color:$calendarActiveDateFontColor !important; 
-        }
-        &.selected{
-          background-color:$calendarSelectedDateBgColor !important;
-          a {
-            color: $calendarSelectedDateFontColor !important;
-          }
-        }
-        &.selected::before{
-          background-color:$calendarSelectedDateBgColor !important;
-          a {
-            color: $calendarSelectedDateFontColor !important;
-          }         
-        }
-        &.holiday{
-          background-color:$calendarHolidayBackgroundColor !important;
-          a{
-            color:$calendarHolidayFontColor !important; 
-          }
-        }           
-      }
-      .todays-date{
-        background-color:$calendarTodayDateBgColor;
-        a{
-          color:$calendarTodayDateFontColor !important;
-        }
-      }       
-      .pre-filler-date.past-date,.post-filler-date.future-date{
-        a{
-          color:$calendarInActiveDateFontColor !important; 
-        }
-        &.holiday{
-          background-color:$calendarHolidayBackgroundColor !important;
-        }           
-      }
-    }
-  }
 }
-
+/*******Bug 834374 - [MS_FL2.0_UI]: Calendar Title Bar font family is not as per CBDK*****/
+.calendar .months .current-year ,.calendar .months .current-month{
+    font-family: $baseFontFamily;
+}
+.months svg polygon {
+  fill:$calendarHeaderArrowColor;
+}
 /********  Global Elements - Stepper  *************/
-.module_10003600 .flContainer ul.tabs .listElement.active {
+.module_10003600 .flContainer ul.tabs label {
+        font-size: 14px !important;
+}
+.module_10003600 .flContainer ul.tabs .listElement.active, .module_10003620 #header {
     border-bottom: 2px solid $activeStepperBorderBottomColor !important;
     label {
         color: $activeStepperFontColor;
@@ -369,14 +589,17 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus
     border-bottom-color: $popupHeaderBorderBtmColor;
 }
 .yodlee-modal-popup-main-title, .module_10003600 #deletePopUpId .yodlee-modal-popup-main-title{
-    color: $popupHeaderTitleColor;
+    color: transparent;
+    font-family:$h2FontFamily;
+
 }
 yodlee-modal-popup-modal-window, .module_10003600 #deletePopUpId, .yodlee-modal-popup-modal-content {
     background: $popupContainerBgColor;
 }
 .yodlee-modal-popup-body-message{
-  color: $baseTextColor;
+    color: $baseTextColor !important;
     border-bottom-color: $popupHeaderBorderBtmColor !important;
+    font-size:$baseFontSize;
 }
 
 /********  Fast Link  - Container  *************/
@@ -389,9 +612,344 @@ yodlee-modal-popup-modal-window, .module_10003600 #deletePopUpId, .yodlee-modal-
         background: $FLContainerBGColor;
     }
 }
-
+/********  Fast Link IAV  - Container  *************/
+.module_10003620 .header {
+     background-color: $FLheaderBGColor !important;
+     color: $FLheaderFontColor;
+}
+.module_10003620 .header .singleAccountHeaderTitle {
+    font-family:$baseFontFamily;
+    font-size:$baseFontSize;
+	line-height:$baseFontLineHeight !important;
+}
+.module_10003620 .siteNameUrl .siteName{
+    font-family:$baseFontFamily;
+    font-size:$baseFontSize !important;
+	line-height:$baseFontLineHeight !important;
+}
+.module_10003623 .list-item .accountBalance {
+    color: $successTextColor;
+    font-size: $baseFontSize;
+    font-family:$baseFontFamily;
+}
 /********  SVG Images  *************/
+// Success tick mark svg
+/*.module_10003600 .icon-tick-success {
+    background: $tick-success no-repeat;
+}*/
+// dropdown arrow svg
+/*.customSelect .value{
+    background-image: $down-arrow;
+    background: $down-arrow no-repeat 98% 50%;
+    background-size: 20px 20px;
+}*/
 
 /********  Other(gif/png) images  **********/
-
+/*
+.loading, .module_10003593 .loading, .inline-spinner, .load i{
+    background-image: $loader_big;
+}
+.accountStatus .accountsInProgress, .module_10003594 .list-item .actions .refresh {
+    background-image: $spinner_medium !important;
+}
+.yodlee-radio-button-label-radio.r_on {
+    background-image: $radio-on;
+}
+.yodlee-radio-button-label-radio {
+    background-image: $radio-off;
+}
+.checkboxwrap .customCheckBox{
+    background-image: $check-off;
+}
+.checkboxwrap .customCheckBox.on{
+    background-image: $check-on;
+}
+*/
 /******* Custom CSS starts here*********/
+
+.module_10003700 .fc-mail-feedback {
+    display:none;
+}
+.yodlee-font-icon.svg_back{
+	display:none !important;
+}
+/*****Bug 834214 *****/
+#homeBack.yodlee-font-icon.svg_back{
+	display:block !important;
+}
+.yodlee-font-icon.svg_forward-arrow-w{
+	display:none !important;
+}
+/******Bug 834273 - [MS_DS_IAV_UI]: ">" icon is missing from Select account screen in IAV flow*******/
+.accountBalance.text-right .yodlee-font-icon.svg_forward-arrow-w{
+	display:block !important;
+}
+.yodlee-modal-popup-body-message .prev_warning_msg {
+  color:$errorColor;
+}
+.deletePrevLinkedSitePopupId .yodlee-modal-popup-close-button {
+    font-size: 1rem;
+    right: 0px;
+    top: 12px;
+    width: 31px !important;
+    height: 24px !important;
+}
+.module_10003591 .searchBoxContainer #searchBtn  {
+    .button.secondary, .button.activebtn {
+        color: $primaryButtonFontColor !important;
+        background-color: $primaryButtonBgColor !important;
+        border: none;
+        font-size: $baseFontSize;
+    }  
+    .button.secondary:hover {
+        color: $primaryButtonFontColorHover !important;
+        background-color: $primaryBtnBgColorHover !important;
+        border: 1px solid $primaryBtnBorderColorHover !important;
+        font-size: $baseFontSize;
+    }  
+}
+.module_10003591 i.yodlee-font-icon.svg_close.prev_deleteIcon.right {
+    font-size: 1rem;
+}
+.module_10003600 .with-form-fields label {
+    display: none;
+}
+.module_10003591 .searchBoxContainer #siteSearch {
+    font-size:$formContainerPlaceholderSize;
+    font-family:$h2FontFamily !important;
+    padding: 0;
+    height:2.8571rem;
+}
+.module_10003591 .searchBoxContainer .showClose  #siteSearch {  
+    border-color:$defaultLinkColor !important;
+    color:$defaultLinkColor !important;
+}
+.noResults, .spelledText, .module_10003600 .flContainer .eyeIcon {
+    font-size:$baseFontSize !important;
+}
+.termsCondition h3{
+    font-size:$baseFontSize !important;
+    font-family:$baseFontFamily;
+    color:$successTextColor;
+}
+p.tOservicecontent, .section-wrapper .section-body, .panel p, .card-footer .info, .module_10003593 .statusMessage, 
+.module_10003592 .errorSection .error-description, .module_10003592 .linkToSite, .module_10003623 .selectAccount, 
+.module_10003591 .searchOption, .module_10003620 .errorSection .error-description, .module_10003624 .confirmAccount, 
+.module_10003624 .headerInstruction, .module_10003624 .headerInstruction, .module_10003620 .statusMessage, .module_10003624 .rowNames ,.timmer-cls {
+    font-size:$baseFontSize !important;
+    font-family:$baseFontFamily;
+	line-height:$baseFontLineHeight !important;
+    color:$baseTextColor;
+}
+.module_10003598 .error-description, .module_10003597 .action .delete, .module_10003592 .errorSection .error-title, .module_10003620 .errorSection .error-title{
+    color: $errorMessageDescColor;
+    font-family: $baseFontFamily;
+	line-height:$baseFontLineHeight !important;
+    font-size: $baseFontSize;
+}
+.module_10003598 {
+    #success-section .section-title {
+        font-size: $formContainerSectionTitleSize !important;
+    }
+    .success-page-main-title, .accountname {
+        color: $baseTextColor;
+        font-size: $baseFontSize;
+        font-family: $baseFontFamily;
+    }
+}
+#success-section .cong-text .exclamation, .module_10003600 .exclamation, #success-section .cong-text{
+    font-size: $formContainerSectionTitleSize !important;
+    font-family: $baseFontFamily;
+}
+.module_10003594 .account-money {
+    font-size:$baseFontSize;
+}
+.module_10003620 input[type="text"], .module_10003620 input[type="password"] {
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+}
+.module_10003600 #deletePopUpId label#deleteconfirmcheckLabel {
+    color: $inputFieldcheckBoxLabelColor !important;
+}
+.checkboxwrap .customCheckBox {
+    background-image: none !important;
+    border: 2px solid $inputFieldcheckBoxLabelColor !important;
+}
+.customCheckBox{
+    color: $inputFieldcheckBoxLabelColor !important;
+}
+.customCheckBox.on {
+    background-color: $inputFieldDefaultBGColor !important;
+}
+.module_10003598 .success-page-currency, .cong-text, .account-money{
+    color:$successTextColor !important;
+    font-family:$h2FontFamily !important;
+    font-size: $h2FontSize !important;
+}
+.module_10003620 .footer {
+    display: none;
+}
+
+/**************Web and Tablet View************/
+@media print, screen and (min-width: 48em){ 
+    .boxWrapper .containter-div div#buttonSection {
+        width: 72%;
+    }
+    .column.left.medium-6.smallplus-6.small-12.buttonWrapper.align-button-wrapper.with-form-fields {
+        width: 28%;
+    }
+    .column.medium-6.btn-wrap.text-right.process-btn-align.nopadding {
+        width:85%;
+    }
+    
+    .module_10003591 .searchBoxContainer #searchBtn  {
+        .button.secondary, .button.hover, .button.activebtn{        
+            margin-top: -26px !important;            
+            min-width: 138px !important;
+        }            
+    }    
+    button, .button {
+        min-width: 165px !important;   
+    }
+    .addButtonSection button#addBtn, .step2ButtonCon .updateBtn {
+        min-width: 165px !important;
+    }
+    button#linkAnotherAccount {
+        min-width: 165px !important;
+    }
+    div#deletePopUpId {
+        min-width: 400px !important;
+    }
+}
+/**************Mobile View************/
+@media only screen and (max-width: 47.9375em) and (min-width: 0em){
+    .module_10003594 .not-full-view .boxWrapper .manualAccount .scrollbaleBoxContainer #accounts {
+        border: none !important;
+    }    
+    .module_10003598 .success-page-main-title div {
+        font-size: $baseFontSize !important;
+        color: $baseTextColor  !important;
+    }
+}
+/**************Tablet View************/
+@media only screen and (max-width: 59.9375em) and (min-width: 48em){
+    .module_10003591 .searchBoxContainer .searchClose {
+        margin-right: 16px;
+    }
+}
+h3{
+	font-family:$baseFontFamily !important;
+	font-size : $h3FontSize !important;
+	line-height : $h3LineHeight !important;
+}
+p{
+	font-family:$baseFontFamily !important;
+	font-size :$paraFontSize !important;
+	line-height :$paraLineHeight !important;
+}
+/***********fix For FL close icon is very close to search button in web view*******/
+@media screen and (min-width: 59.9375em){
+.searchBoxContainer .searchClose {
+    margin-right: 8px !important;
+}
+}
+/***********fix For IAV search text going beyond the close icon*******/
+@media screen and (min-width: 750px){
+	.module_10003591 .searchBoxContainer #siteSearch {
+		padding-right: 40px;
+	}
+}
+/***********Bug 834137 - [MS_DS_IAV_UI]: "g" and "p" letters are not fully visible*******/
+.siteUrl.ellipsis-cls{
+    height: 20px;
+}
+/***********Bug 834140 - [MS_DS_IAV_UI]: Show/Hide link is not as per CBDK*******/
+.module_10003600 .flContainer .eyeIcon,.module_10003592 .eyeIcon{
+	color:$defaultLinkColor;
+	font-size: 18px !important;
+}
+.toggleSwitchRow .label{
+ color: $toggleButtonFontColor !important;
+}
+.module_10003597 .action .delete{
+    margin-top: 20px !important;
+}
+
+/*************bug 834269end********/
+/*************Bug 834291 - [MS_FL2.0_UI]: Text in Continue button is not center aligned********/
+.module_10003600 #deletePopUpId .yodlee-modal-popup-btn-group .yodlee-modal-popup-btn.primary.continue.button {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.module_10003600 .netWorth label {
+    font-size:$h3FontSize !important;
+	font-family:$baseFontFamily !important;
+	line-height:$h3LineHeight !important;
+}
+.module_10003597 .switchWrapper {
+    margin-top: 5px !important;
+}
+/*** 834901***/
+.module_10003600 #deletePopUpId .yodlee-modal-popup-modal-content .pop-up-account-name{
+	display: none !important;
+}
+.module_10003598 .section-wrapper{
+	padding-top:10px !important;
+}
+.module_10003598 .toggleSwitchRow {
+    padding-top: 5px;
+}
+.termsOfService,.module_10003598 .card-footer .info{
+	font-family: $baseFontFamily !important;
+	line-height:$baseFontLineHeight !important;
+	font-size:$baseFontSize !important;
+	color: $baseTextColor !important;
+}
+.module_10003600 .flContainer .section-title{
+	line-height:34px;
+}
+form .row.collapse.tncWrap{
+	padding-top:10px;
+}
+/***835587 *******/
+.module_10003597 .customSelect .optList{
+	border-width:1px;
+}
+.module_10003591 #otherAccountsContainer .otherAccountsLink,.module_10003600 .flContainer ul.tabs .listElement label{
+	line-height:$baseFontLineHeight !important;
+}
+/*************bug 835698********/
+@media screen and (orientation:landscape) {
+    /* Portrait styles */
+    .row.externalCDVFooter.collapse {
+        padding : 0.13412rem !important;
+    }
+}
+/*****bug 836771*******/
+.module_10003620 .flContainer .module_10003592 .linkToSite{
+	padding-top:12px;
+}
+
+#success-section .cong-text ,.module_10003600 .cong-text{
+    line-height: 34px !important;
+}
+@media only print, screen and (min-width: 60em){
+	.searchBoxContainer .large-10 {
+		width: 100%;
+	}
+}
+.module_10003591 .searchBoxContainer #searchBtn{
+	display:none !important;
+}
+.module_10003600 .flContainer .update-manu-btnWrapper button.cancel.button.secondary {
+    min-width: 110px !important;
+}
+.module_10003600 .inprogress-success-delete-popup .inpr-succ-msg,#real_est_delete_success_section .row.collapse.text-center{
+	color:$successTextColor !important;
+    font-family:$h2FontFamily !important;
+    font-size: $h2FontSize !important;
+	line-height: 34 px !important;
+}
+.switchWrapper .netWorth{
+	height:20px;
+}
