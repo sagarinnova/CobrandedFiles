@@ -1,0 +1,154 @@
+
+//Global Elements - Typography
+//------------------------------------------------
+
+$baseFontFamily : ProximaNovaRegular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+$baseFontSize : 15px;
+$baseTextColor : #555555;
+
+//Global Elements - Success/Failure
+//------------------------------------------------
+
+$successTextColor : #3F813D;
+$errorMessageDescColor : #C91D1D;
+$contentSecondaryColor : #77716f;
+
+//Global Elements - Hyperlinks
+//------------------------------------------------
+
+$defaultLinkColor : #1797ba;
+$defaultLinkDecoration : none;
+$linkColorHover : #0F8EC7;
+$linkDecorationHover : none;
+
+//Global Elements - Primary Button
+//------------------------------------------------
+
+$buttonCornerRadius : 30px;
+$primaryButtonFontColor : #fff;
+$primaryButtonBgColor : #0F8EC7;
+$primaryButtonBorderColor : #0F8EC7;
+$primaryButtonFontColorHover : #ffffff;
+$primaryBtnBgColorHover : #0C76BE;
+$primaryBtnBorderColorHover : #0C76BE;
+$primaryDisableOpacity : 0.2;
+
+//Global Elements - Secondary Button
+//------------------------------------------------
+
+$secondaryButtonFontColor : #FFF;
+$secondaryBtnBgColor : #DADADA;
+$secondaryBtnBorderColor : #DADADA;
+$secondaryButtonFontColorHover : #144173;
+$secondaryButtonBgColorHover : #FFFFFF;
+$secondaryBtnBorderColorHover : #e0dddc;
+
+//Global Elements - Tertiary Button
+//------------------------------------------------
+
+$tertiaryButtonFontColor : #77716f;
+$tertiaryButtonBgColor : #FFFFFF;
+$tertiaryButtonBorderColor : #e0dddc;
+$tertiaryButtonFontColorHover : #4e4945;
+$tertiaryButttonBgColorHover : #FFFFFF;
+$tertiaryBtnBorderColorHover : #cdcac9;
+
+//Global Elements - Delete Button
+//------------------------------------------------
+
+$deleteButtonFontColor : #C91D1D;
+$deleteBtnBgColor : #FFFFFF;
+$deleteBtnBorderColor : #e0dddc;
+$deleteBtnFontColorHover : #a82314;
+$deleteBtnBgColorHover : #FFFFFF;
+$deleteBtnBorderColorHover : #cdcac9;
+
+//Global Elements - Form Elements
+//------------------------------------------------
+
+$formContainerBorderColor : #FFFFFF;
+$formContainerBorderRadius : 3px;
+$formContainerHeaderBGColor : #eeefee;
+$formContainerHeaderTitleColor : #1e1d1c;
+$formContainerSubHeaderBGColor : #f9fafa;
+$formContainerBGColor : #FFFFFF;
+$FormLabelFontColor : #4e4945;
+$inputFieldDefaultFontColor : #77716f;
+$inputFieldDefaultBGColor : #ffffff;
+$inputFieldDefaultBorderColor : #cdcac9;
+$inputFieldBorderRadius : 3;
+$inputFieldFocusFontColor : #1e1d1c;
+$inputFieldFocusBGColor : #ffffff;
+$inputFieldFocusBorderColor : #77716f;
+$inputFieldErrorBorderColor : #C91D1D;
+
+//Global Elements - Dropdowns
+//------------------------------------------------
+
+$dropdownFontColor : #1e1d1c;
+$dropdownBgColor : #FFFFFF;
+$dropdownBorderColor : #77716f;
+$dropdownSelectedItemBgColor : #EEF1F4;
+$dropdownItemBgColorOnHover : #c9c9c9;
+
+//Global Elements - Toggle Switch
+//------------------------------------------------
+
+$switchBtnOffBgColor : #cdcac9;
+$switchBtnOnBgColor : #0C76BE;
+
+//Global Elements - Calendar
+//------------------------------------------------
+
+$calendarHeaderBgColor : #FFFFFF;
+$calendarHeaderFontColor : #1e1d1c;
+$calendarDaysBgColor : #FFFFFF;
+$calendarDaysFontColor : #1e1d1c;
+$calendarHeaderArrowColor : #767676;
+$calendarInActiveDateFontColor : #7b7471;
+$calendarActiveDateFontColor : #1e1d1c;
+$calendarActivedDatesBgColor : #FFF;
+$calendarSelectedDateBgColor : #35adc7;
+$calendarSelectedDateFontColor : #FFF;
+$calendarTodayDateBgColor : #e5f2f5;
+$calendarTodayDateFontColor : #1e1d1c;
+$calendarHolidayBackgroundColor : #f9fafa;
+$calendarHolidayFontColor : #c9510c;
+
+//Global Elements - Stepper
+//------------------------------------------------
+
+$activeStepperFontColor : #1e1d1c;
+$activeStepperBorderBottomColor : #0c76be;
+$completedStepperFontColor : #a9a3a1;
+$completedStepperBorderBottomColor : #0c76be;
+$inactiveStepperFontColor : #a9a3a1;
+$inactiveStepperBorderBottomColor : #eeefee;
+
+//Global Elements - Dialog Box
+//------------------------------------------------
+
+$popupHeaderBgColor : #eeefee;
+$popupHeaderTitleColor : #1e1d1c;
+$popupHeaderBorderBtmColor : #e0dddc;
+$popupContainerBgColor : #FFFFFF;
+
+
+//Fastlink - Layout
+//------------------------------------------------
+
+$FLheaderFontColor : #FFF;
+$FLheaderBGColor : #0F8EC7;
+$FLContainerBGColor : #FFFFFF;
+
+
+//Assets - SVG
+//------------------------------------------------
+
+$settingsIconColor : #77716F;
+$trashIconColor : #77716F;
+$cardCloseIconColor : #1e1d1c;
+$errorIconColor : #d82d16;
+$tick-success : #3F813d;
+$down-arrow : #77716f;
+
